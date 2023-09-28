@@ -1,0 +1,70 @@
+@keyframes run {
+    0% {transform: translate3d(0,0,0);}
+    25%{transform: skew(65deg,0);}
+    26%{transform: skew(-5deg,0);}
+    50%{transform: skew(-5deg,0) translate3d(6400px,0,0);}
+    50.001%{transform: skew(-5deg,0) translate3d(-6400px,0,0);}
+    50.001%{transform: skew(-5deg,0) translate3d(-6400px,0,0);}
+    65%{transform: skew(-45deg,0) translate3d(0,0,0);}
+    75%{transform: skew(20deg,0);}
+    90%{transform: skew(-10deg,0);}
+    100% {transform: skew(0deg,0);}}
+
+* {
+    margin: .05rem 0 .45rem 0;
+    padding: .05rem 0 .45rem 0;}
+body {
+    background-color: hsl(40, 100%, 97%);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 3rem 5% 3rem 5%;}
+h1{
+    font-size:3rem;color:hsl(160, 13%, 33%);}
+h2{
+    font-size:2rem;color:hsl(160, 13%, 33%);}
+p{
+    font-size: 1em;color:hsl(160, 13%, 33%);}
+
+header img {
+    display: block;
+    margin: 0 auto;
+
+    animation: run 2s linear;
+    animation-direction:normal;
+    animation-iteration-count:1;
+    animation-duration: .7s;
+    animation-delay: .3s;}
+
+.navigation {
+    list-style-type: none;
+    text-align: center;
+    
+    background-color:hsl(40, 100%, 97%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;}
+.navigation a {
+    color: hsl(160, 13%, 33%);
+    display: inline-block;
+    padding: .75rem;
+    margin: 0 .75rem;
+    text-align: center;
+    text-decoration: none;}
+.navigation a:hover {
+    background-color: hsl(160, 13%, 33%);
+    color: hsl(40, 100%, 97%);}
+
+section {
+    display: flex;}
+article {
+    margin:auto auto auto 0.5rem;
+    flex: 1;
+    text-justify: newspaper;}
+
+footer {
+    display: flex;}
+footer div {
+    flex: 1;
+    display:flex;}
+.copyright {
+    justify-content: center;
+    align-items: center;}
