@@ -1,0 +1,69 @@
+/* Properties for other selectors */
+*{
+    font-family: 'Calibri', sans-serif;
+}
+
+.menu, .ll{
+    text-align: center;
+    color:hsl(30, 95%, 62%);
+}
+
+.ll{
+    font-size: 3.0vw;
+    margin-bottom: 2.0vw;
+    border-bottom: .2vw solid hsl(160, 13%, 33%);
+}
+
+.menu-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:hsl(240, 3%, 88%);
+}
+
+.section{
+    padding: 1.0vw;
+}
+
+.label{
+    font-weight: bold;
+}
+
+.description{
+    font-style: italic;
+    border-top: .2vw solid hsl(160, 13%, 33%);
+}
+
+.item-name {
+    margin: 2.5vw;
+    font-size: 1.2vw;
+}
+
+b {
+    float: right;
+    margin-top: -1.5vw;
+    color: darkcyan;
+}
+
+div > h3 {
+    font-size: 2.0vw;
+    margin: 2.0vw;
+    text-align: center;
+    color: hsl(160, 13%, 33%);
+}
+
+.label + .low {
+    color: brown;
+}
+
+div ~ div {
+    color:rgb(90,90,90);
+}
+/* Add rules for the steps mentioned below */
+.menuart{
+    background-color: hsl(240, 3%, 88%);
+    border-radius: 2vw;
+    grid-row: 1 / span 2;}
+.menuart > * {
+    margin: 1%;
+    padding: 1%;}
